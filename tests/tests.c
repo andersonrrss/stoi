@@ -4,8 +4,8 @@
 static int pass = 0, fail = 0;
 
 #define CHECK_OK(input, expected) do {                                  \
-    int v = 0;                                                          \ 
-    int r = stoi(input, &v);                                            \ 
+    int v = 0;                                                          \
+    int r = stoi(input, &v);                                            \
     if(r == 0 && v == (expected)) pass++;                               \
     else {fail++; printf("FALHOU: \"%s\", r=%d v=%d (esperado: %d)\n",  \
         input, r, v, (expected));}                                      \
